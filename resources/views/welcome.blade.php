@@ -216,19 +216,19 @@
                     <img src="{{ asset('user/img-1.jpg') }}" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="blog-card-body">
-                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+                    <h5 class="blog-card-title">Lorem ipsum, dolor sit amet consectetur.</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a onclick="confirmationReadMore(event)" href="#blog">By: UsriYusron</a>
+                        <a onclick="confirmationReadMore(event)" href="#blog"><i class="ti-heart text-danger"></i> 234</a>
+                        <a onclick="confirmationReadMore(event)" href="#blog"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
 
                     <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
                     <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
 
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a onclick="confirmationReadMore(event)" href="#blog" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -241,14 +241,14 @@
                     <h5 class="blog-card-title">Explicabo illo</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                        <a href="#"><i class="ti-comment"></i> 264</a>
+                        <a onclick="confirmationReadMore(event)" href="#blog">By: UsriYusron</a>
+                        <a onclick="confirmationReadMore(event)" href="#blog"><i class="ti-heart text-danger"></i> 456</a>
+                        <a onclick="confirmationReadMore(event)" href="#blog"><i class="ti-comment"></i> 264</a>
                     </p>
                     
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
 
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a onclick="confirmationReadMore(event)" href="#blog" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -256,45 +256,28 @@
     </section><!-- end of blog section -->
 
     <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
-                    </div>
-                </div>  
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+
+
+    
+    {{-- buat livewire --}}
+    @livewire('contact-form')
+
+    @livewireScripts
+    {{-- buat livewire selesai --}}
 
     <!-- Footer -->
     <div class="container">
         <footer class="footer">       
             <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">UsriYusron</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="http://www.linkedin.com/in/muhamad-usriyusron" target="_blank" class="link"><i class="ti-linkedin"></i></a>
+                <a href="mailto:muhamad.usriyusron@gmail.com" target="_blank" class="link"><i class="ti-google"></i></a>
+                <a href="https://instagram.com/usri.yusron" target="_blank" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://x.com/Muhammadyu17995" target="_blank" class="link"><i class="ti-twitter-alt"></i></a>
                 <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
             </div>
         </footer>
     </div> <!-- End of page footer -->
-
 	
 	<!-- core  -->
     <script src="{{ asset('user/jquery-3.4.1.js') }}"></script>
@@ -324,6 +307,27 @@
             swal({
             title: "AREA TERLARANG",
             text: "Hanya Admin Yang Bisa Login",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+            })
+
+            .then((willCancel)=>{
+            if(willCancel){
+                window.location.href = urlToRedirect;
+            }
+            });
+        }
+        function confirmationReadMore(ev){
+            ev.preventDefault();
+
+            var urlToRedirect = ev.currentTarget.getAttribute('href');
+
+            console.log(urlToRedirect);
+
+            swal({
+            title: "COOMING SOON",
+            text: "Fitur Sedang dalan Tahap Pengembangan",
             icon: "warning",
             buttons: true,
             dangerMode: true,
