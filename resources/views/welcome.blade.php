@@ -12,6 +12,9 @@
     {{-- mansory --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
+    {{-- css custome for me --}}
+    <link rel="stylesheet" href="style.css">
+
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
 
@@ -255,15 +258,11 @@
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 
-    <!-- contact section -->
-
-
-    
-    {{-- buat livewire --}}
+    <!-- contact section livewire  -->   
     @livewire('contact-form')
 
     @livewireScripts
-    {{-- buat livewire selesai --}}
+    {{-- buat contact section livewire selesai --}}
 
     <!-- Footer -->
     <div class="container">
@@ -297,49 +296,9 @@
     </script>
 
     <script>        
-        function confirmationLogin(ev){
-            ev.preventDefault();
-
-            var urlToRedirect = ev.currentTarget.getAttribute('href');
-
-            console.log(urlToRedirect);
-
-            swal({
-            title: "AREA TERLARANG",
-            text: "Hanya Admin Yang Bisa Login",
-            icon: "warning",
-            buttons: true,
-            dangerMode: true,
-            })
-
-            .then((willCancel)=>{
-            if(willCancel){
-                window.location.href = urlToRedirect;
-            }
-            });
-        }
-        function confirmationReadMore(ev){
-            ev.preventDefault();
-
-            var urlToRedirect = ev.currentTarget.getAttribute('href');
-
-            console.log(urlToRedirect);
-
-            swal({
-            title: "COOMING SOON",
-            text: "Fitur Sedang dalan Tahap Pengembangan",
-            icon: "warning",
-            buttons: true,
-            dangerMode: true,
-            })
-
-            .then((willCancel)=>{
-            if(willCancel){
-                window.location.href = urlToRedirect;
-            }
-            });
-        }
     </script>
+
+    <script src="{{ asset('script.js') }}"></script>
 
 </body>
 </html>
